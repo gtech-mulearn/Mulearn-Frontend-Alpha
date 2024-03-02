@@ -12,6 +12,7 @@ import GetInvolved from "./pages/getInvolved";
 import Careers from "./pages/careers";
 import Projects from "./pages/projects";
 import Community from "./pages/community";
+import './App.css'
 
 const App: React.FC = () => {
 	return (

@@ -1,10 +1,139 @@
 .navbarWrapper {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10vw 20px;
+  z-index: 9990;
+  backdrop-filter: blur(8px);
+  top: 0;
+}
+.navbarWrapper > div {
+  width: fit-content;
+}
+.navbarWrapper button {
+  background-color: transparent;
+}
+.navbarLeft {
+  width: fit-content;
+  background-color: transparent;
+}
+.navbarLeft .logo {
+  width: 100px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 9999;
 }
 
-.navbarWrapper div {
-	display: flex;
-	gap: 1rem;
+.navbarRight {
+  display: flex;
+  gap: 4vw;
+  border-radius: 20px;
+  background: var(
+    --Materials-Ultrathin---Dark,
+    linear-gradient(0deg, #9c9c9c 0%, #9c9c9c 100%),
+    rgba(37, 37, 37, 0.55)
+  );
+  background-blend-mode: overlay, normal;
+
+  padding: 10px 20px;
+  backdrop-filter: blur(25px);
+}
+.navbarRight > a > p {
+  text-transform: capitalize;
+}
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarWrapper .JoinUsWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbarWrapper .StudyButton,
+.navbarWrapper .navbarMobile .StudyButton {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #5940d4;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+}
+.navbarWrapper .StudyButton {
+  color: white;
+  font-weight: 500;
+}
+
+.navbarMobile {
+  display: none;
+}
+.navbarMobile .menuMd {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+.navbarMobile > div {
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0vw;
+  top: 0;
+  gap: 5px;
+  height: calc(100vh);
+  width: calc(100vw);
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.navbarMobile > div > a > p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.navbarMobile > div > button {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: fit-content;
+  align-self: center;
+}
+.navbarWrapper a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbarRight {
+    display: none;
+  }
+  .navbarMobile {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+  .navbarWrapper > .JoinUsWrap {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navbarWrapper {
+    padding: 20px 10vw 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbarLeft .logo {
+    display: flex;
+  }
+  .navbarLeft .hidden {
+    opacity: 0;
+  }
 }
