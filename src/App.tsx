@@ -8,7 +8,10 @@ import {
 import Home from "./pages/home";
 import NotFound from "./pages/notFound";
 import Layout from "./components/layout";
-
+import GetInvolved from "./pages/getInvolved";
+import Careers from "./pages/careers";
+import Projects from "./pages/projects";
+import Community from "./pages/community";
 
 const App: React.FC = () => {
 	return (
@@ -17,8 +20,11 @@ const App: React.FC = () => {
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
+					<Route path="get-involved" element={<GetInvolved />} />
+					<Route path="careers" element={<Careers />} />
+					<Route path="projects" element={<Projects />} />
+					<Route path="community" element={<Community />} />
 				</Route>
-				<Route path="/" element={<Home />} />
 				<Route path="/404" element={<NotFound />} />
 				<Route path="/*" element={<Navigate to="/404" replace />} />
 			</Routes>

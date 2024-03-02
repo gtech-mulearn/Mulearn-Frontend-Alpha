@@ -1,0 +1,10 @@
+.navbarWrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbarWrapper div {
+	display: flex;
+	gap: 1rem;
+}
