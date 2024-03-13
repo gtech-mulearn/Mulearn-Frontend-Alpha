@@ -1,0 +1,9 @@
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 0vw 20px;
+}
+
+.Wrapper video{
+    width: 100%;
+}

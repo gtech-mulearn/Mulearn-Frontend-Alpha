@@ -4,13 +4,14 @@ import { Events } from "./components/events";
 import Hero from "./components/hero";
 import { MuStory } from "./components/muStory";
 import { Testimonials } from "./components/testimonials";
+import { WhatHappens } from "./components/whatHappens";
 
 
 const Home = () => {
 	return (
-		<div>
-			<h1>Home</h1>
+		<div>		
 			<Hero />
+			<WhatHappens />
 			<MuStory />
 			<Banner />
 			<Partners />
