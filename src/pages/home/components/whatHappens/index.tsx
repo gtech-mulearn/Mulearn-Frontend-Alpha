@@ -56,10 +56,10 @@ export const WhatHappens = (_props: Props) => {
       </h1>
       <div>
         {data.map((item, index) => {
-          const isExpanded = expanded[index]; // Check if the current item is expanded
+          const isExpanded = expanded[index]; 
           const displayedText = isExpanded
             ? item.para
-            : truncateText(item.para, 15); // Display full text if expanded, else truncated
+            : truncateText(item.para, 15); 
 
           return (
             <div
@@ -70,7 +70,7 @@ export const WhatHappens = (_props: Props) => {
             >
               <div className={styles.back}></div>
               <div className={styles.Content}>
-                <div>{hoverIndex ? item.icono : item.iconb}</div>
+                <div>{hoverIndex === index ? item.icono : item.iconb}</div>
                 <h2>{item.name}</h2>
                 <p>{displayedText}</p>
                 <button onClick={() => toggleExpand(index)}>

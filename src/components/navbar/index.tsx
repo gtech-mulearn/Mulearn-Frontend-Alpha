@@ -8,34 +8,61 @@ type Props = {};
 
 export const Navbars = (_props: Props) => {
   const [openmenu, setopenmenu] = useState(false);
-  const [navbg, setNavBg] = useState(false);
   const navigate = useNavigate();
   function openMenu() {
     setopenmenu(!openmenu);
   }
-  const navContent = ["Home","Community", "Get Involved", "Careers", "Projects"];
-  const changeNavBg = () => {
-    window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavBg);
-    return () => {
-      window.removeEventListener("scroll", changeNavBg);
-    };
-  }, []);
+  const navContent = [
+    "Home",
+    "Community",
+    "Get Involved",
+    "Careers",
+    "Projects",
+  ];
 
   const handleNavigation = (value: string) => {
     navigate(`/${value}`);
     setopenmenu(!openmenu);
   };
+  const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+  const [navStyle, setNavStyle] = useState({});
 
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY < lastScrollY) {
+          // Scrolling up
+          setNavStyle({
+            position: "fixed",
+            top: 0,
+            width: "100%",
+          });
+        } else {
+          setNavStyle({
+            position: "unset",
+          });
+        }
+
+        if (window.scrollY == 0) {
+          setNavStyle({
+            position: "fixed",
+          });
+        }
+        setLastScrollY(currentScrollY);
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
   return (
     <div
       className={styles.navbarWrapper}
-      style={{
-        background: navbg ? "rgba(255,255,255,0)" : "rgba(255,255,255,0)",
-      }}
+    
+      style={navStyle}
     >
       <div className={styles.navbarLeft}>
         <button onClick={() => navigate("/")} className={`${styles.logo} `}>

@@ -6,19 +6,23 @@ import { MuStory } from "./components/muStory";
 import { Testimonials } from "./components/testimonials";
 import { WhatHappens } from "./components/whatHappens";
 
-
 const Home = () => {
-	return (
-		<div>		
-			<Hero />
-			<WhatHappens />
-			<MuStory />
-			<Banner />
-			<Partners />
-			<Events />
-			<Testimonials />
-		</div>
-	);
+  const preventRightClick = (
+    event: React.MouseEvent<HTMLImageElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+  };
+  return (
+    <div onContextMenu={preventRightClick}>
+      <Hero />
+      <WhatHappens />
+      <MuStory />
+      <Banner />
+      <Partners />
+      <Events />
+      <Testimonials />
+    </div>
+  );
 };
 
 export default Home;
