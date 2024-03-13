@@ -1,0 +1,71 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 6vh 0vw 0px;
+  width: 100%;
+}
+
+.Wrapper h1 {
+  font-weight: 400;
+  font-family: "Nohemi";
+}
+
+.Wrapper .Swiperwrapper {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.Wrapper .Swiperwrapper .LeftMask {
+  width: 20vw;
+  height: 100%;
+  position: absolute;
+  z-index: 800;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.Wrapper .Swiperwrapper .RightMask {
+  width: 20vw;
+  height: 100%;
+  position: absolute;
+  z-index: 800;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.Wrapper .SwiperSlide {
+  width: calc(100% / 2 - 20px);
+}
+.Wrapper .SwiperSlide .IndividualContainer {
+  display: flex;
+
+  flex-direction: column;
+  width: 100%;
+  margin: 0px 10px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.Wrapper .SwiperSlide .IndividualContainer img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-color: #d9d9d9;
+  border-radius: 12px;
+}
+
+.Wrapper .SwiperSlide .IndividualContainer h2 {
+  font-weight: 500;
+}
+
+.Wrapper .SwiperSlide .IndividualContainer p {
+  font-size: 15px;
+  line-height: 1.3;
+}
+@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 420px) {
+}
