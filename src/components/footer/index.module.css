@@ -1,0 +1,89 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10vw;
+  width: 100%;
+}
+.Wrapper .Footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5vw;
+  align-items: flex-start;
+}
+
+.Wrapper .Footer .Main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 350px;
+  gap: 25px;
+  text-align: left;
+  color: #555555;
+  font-size: 17px;
+  width: 30%;
+  min-width: 300px;
+}
+
+.Wrapper .Footer .Main > div {
+  display: flex;
+  gap: 12px;
+}
+
+.Wrapper .Footer .Content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 25px 0px;
+  justify-content: space-between;
+  width: calc(70% - 10vw);
+  flex-wrap: wrap;
+}
+
+.Wrapper .Footer .Content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 20px;
+}
+.Wrapper .Footer .Content > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Wrapper .Copyright {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+  color: #555555;
+  font-size: 16px;
+  border-top: 1px solid #d4d2e3;
+}
+
+.Wrapper .Copyright div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Wrapper .Copyright button {
+  color: #555555;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1050px) {
+  .Wrapper .Footer .Content {
+    width: 100%;
+  }
+
+  .Wrapper .Footer {
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Wrapper .Footer .Content {
+    justify-content: space-around;
+  }
+}

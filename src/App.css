@@ -54,7 +54,7 @@ body {
   margin: 0;
   padding: 0;
 
-  min-width: 320px;
+ 
   min-height: 100vh;
   width: 100%;
   background-color: #000000;
@@ -67,6 +67,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color:#555555 ;
 }
 button {
   cursor: pointer;

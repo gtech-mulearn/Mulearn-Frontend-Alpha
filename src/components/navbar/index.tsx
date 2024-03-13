@@ -89,12 +89,12 @@ export const Navbars = (_props: Props) => {
                 <p
                   style={{
                     fontSize: "17px",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     color: window.location.href.includes(
                       `/${content.toLowerCase().replace(/\s+/g, "-")}`
                     )
-                      ? "#FD2E35"
-                      : "#342020",
+                      ? "#FF7940"
+                      : "#000",
                   }}
                 >
                   {content}
