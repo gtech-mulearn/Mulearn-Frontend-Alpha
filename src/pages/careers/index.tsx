@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "./index.module.css";
+import { Landing } from "./components/hero"
 
 const Careers = () => {
 	const [careers, setCareers] = useState<CareerData[]>([]);

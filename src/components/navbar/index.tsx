@@ -22,6 +22,7 @@ export const Navbars = (_props: Props) => {
 
   const handleNavigation = (value: string) => {
     navigate(`/${value}`);
+     window.scrollTo(0, 0);
     setopenmenu(!openmenu);
   };
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
