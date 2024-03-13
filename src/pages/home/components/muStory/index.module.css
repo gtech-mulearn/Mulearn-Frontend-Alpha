@@ -1,0 +1,30 @@
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 6vh 0px 0px;
+    align-items: center;
+}
+
+.Wrapper .Header{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0px 5vw;
+    max-width: 1500px;
+    font-size: 18px;
+}
+
+.Wrapper .VideoSet{
+    width: 100%;
+    background: url(./bgvideo.png) center center/cover no-repeat;
+    padding: 6vh 30px;
+}
+
+.VideoSet iframe{
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+
+    border-radius: 20px;
+}
