@@ -82,6 +82,12 @@
     gap: 0px;
   }
 }
+@media screen and (max-width: 830px){
+.Wrapper .Copyright {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+}
 @media screen and (max-width: 600px) {
   .Wrapper .Footer .Content {
     justify-content: space-around;
