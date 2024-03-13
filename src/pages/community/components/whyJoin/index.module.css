@@ -1,0 +1,63 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 0vh 5vw 6vh;
+}
+
+.Wrapper > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+}
+.Individual {
+  color: #555555;
+  transition: color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.Individual > div {
+  background-color: #fff6f2;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Individual > div svg {
+  width: 80px;
+}
+.Individual p {
+  max-width: 150px;
+  color: #555;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+}
+.Individual:hover p {
+  color: #ff7940;
+}
+
+.Individual:hover > div {
+  background-color: #ff7940;
+}
+
+@media screen and (max-width: 1000px) {
+  .Individual > div {
+    width: 100px;
+    height: 100px;
+  }
+  .Individual > div svg {
+    width: 70px;
+  }
+  .Individual p {
+    font-size: 20px;
+  }
+}
