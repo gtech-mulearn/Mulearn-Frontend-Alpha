@@ -1,7 +1,10 @@
+import { Landing } from "./components/hero"
 
 const Careers = () => {
   return (
-	<div>Careers</div>
+	<div>
+    <Landing />
+  </div>
   )
 }
 
