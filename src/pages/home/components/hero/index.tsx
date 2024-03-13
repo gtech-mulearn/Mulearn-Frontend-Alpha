@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import vid from "./3.0.mp4";
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
         poster="https://ondc.org/assets/theme/images/video_img.jpg"
       >
         <source
-          src="https://ondc.org/assets/theme/video/video-desktop1.mp4"
+          src={vid}
           type="video/mp4"
         />
       </video>
