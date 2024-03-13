@@ -72,3 +72,32 @@ export const PartnersLinear = () => {
     </div>
   );
 };
+
+export const PartnersCarrers = () => {
+  const marqParams = {
+    autoFill: true,
+    pauseOnHover: true,
+    gradient: false,
+    speed: 80,
+    drag: true,
+  };
+  return (
+    <div className={styles.PartnerWrapper}>
+      <h1>
+        Presenting our <span className="colorText">talent hunters</span>
+      </h1>
+      <Marquee
+        {...marqParams}
+        style={{ width: "100vw" }}
+        className={styles.container}
+      >
+        {data.map((item, index) => (
+          <div key={index} className={styles.inner}>
+            {" "}
+            <img src={item} alt={`Partner ${index + 1}`} />
+          </div>
+        ))}
+      </Marquee>
+    </div>
+  );
+};

@@ -1,0 +1,25 @@
+.Wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 0px 5vw 6vh;
+}
+
+.Wrapper .Content{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.Wrapper .Content >div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+
+.Wrapper .Individuals{
+    width: calc(100% / 4 - 15px)
+}
