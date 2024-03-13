@@ -1,7 +1,10 @@
+import { PartnersLinear } from "../../components/partners"
 
 const Community = () => {
   return (
-	<div>Community</div>
+	<div>
+    <PartnersLinear />
+  </div>
   )
 }
 
