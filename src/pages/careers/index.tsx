@@ -30,6 +30,7 @@ const Careers = () => {
 	}, []);
 	return (
 		<div>
+			<Landing />
 			<h2>Career Opportunities</h2>
 			{careers.length > 0 ? (
 				<div className={styles.careersWrapper}>
