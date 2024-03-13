@@ -5,12 +5,12 @@ export const Banner = (_props: Props) => {
   return (
     <div className={styles.Wrapper}>
       <div>
-        <h1>2,000+</h1>
+        <h1>1,900+</h1>
         <p>Colleges</p>
       </div>
       <div>
         {" "}
-        <h1>30,000+</h1>
+        <h1>29,000+</h1>
         <p>Discord Members</p>
       </div>
       <div>

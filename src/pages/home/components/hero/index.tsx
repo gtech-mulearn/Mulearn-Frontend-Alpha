@@ -3,10 +3,15 @@ import styles from "./index.module.css";
 const Hero = () => {
   return (
     <div className={styles.Wrapper}>
-      <h1>
-        Micro Learning, Macro Impacts with endless <span>collaboration</span>
-      </h1>
-      <p>Your Hero’s Journey starts here!</p>
+      <div className={styles.Header}>
+        <h1>
+          Micro Learning, Macro Impacts{" "}
+          <span>
+            <p>with endless</p>&nbsp;<div>collaboration</div>
+          </span>
+        </h1>
+        <p>Your Hero’s Journey starts here!</p>
+      </div>
       <video
         autoPlay={true}
         muted={true}

@@ -8,8 +8,8 @@ const Footer = () => {
         <div className={styles.Main}>
           <LogoWhite />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
-            mauris sed ma
+            Soaring past the confines of traditional learning, to above and
+            beyond.
           </p>
           <div>
             <button>
