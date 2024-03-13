@@ -30,11 +30,7 @@
   display: flex;
   gap: 4vw;
   border-radius: 20px;
-  background: var(
-    --Materials-Ultrathin---Dark,
-    linear-gradient(0deg, #9c9c9c 0%, #9c9c9c 100%),
-    rgba(37, 37, 37, 0.55)
-  );
+
   background-blend-mode: overlay, normal;
 
   padding: 10px 20px;
@@ -54,14 +50,20 @@
   gap: 10px;
 }
 
+.JoinUsWrap button{
+  background-color: #FFE4D9;
+  padding: 10px;
+  border-radius: 12px;
+}
+
 .navbarWrapper .StudyButton,
 .navbarWrapper .navbarMobile .StudyButton {
-  padding: 10px 15px;
+  padding: 12px 20px;
   color: #fff;
-  background-color: #5940d4;
+  background-color: #ff7940;
   font-weight: 600;
   border: none;
-  border-radius: 30px;
+  border-radius: 12px;
 }
 .navbarWrapper .StudyButton {
   color: white;
@@ -73,7 +75,7 @@
 }
 .navbarMobile .menuMd {
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: #ff7940;
   font-size: 25px;
 }
 .navbarMobile > div {

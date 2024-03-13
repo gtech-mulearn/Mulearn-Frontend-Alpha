@@ -13,7 +13,7 @@ export const Navbars = (_props: Props) => {
   function openMenu() {
     setopenmenu(!openmenu);
   }
-  const navContent = ["Community", "Get Involved", "Careers", "Projects"];
+  const navContent = ["Home","Community", "Get Involved", "Careers", "Projects"];
   const changeNavBg = () => {
     window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
   };
@@ -25,7 +25,7 @@ export const Navbars = (_props: Props) => {
     };
   }, []);
 
-  const renderLinks = (value: string) => {
+  const handleNavigation = (value: string) => {
     navigate(`/${value}`);
     setopenmenu(!openmenu);
   };
@@ -38,10 +38,7 @@ export const Navbars = (_props: Props) => {
       }}
     >
       <div className={styles.navbarLeft}>
-        <button
-          onClick={() => navigate("/")}
-          className={`${styles.logo} ${navbg ? " " : styles.hidden}`}
-        >
+        <button onClick={() => navigate("/")} className={`${styles.logo} `}>
           <LogoWhite />
         </button>
       </div>
@@ -49,19 +46,19 @@ export const Navbars = (_props: Props) => {
         {navContent.map((content, i) => (
           <button
             onClick={() =>
-              renderLinks(content.toLowerCase().replace(/\s+/g, "-"))
+              handleNavigation(content.toLowerCase().replace(/\s+/g, "-"))
             }
             key={i}
           >
             <p
               style={{
                 fontSize: "17px",
-                fontWeight: 600,
+                fontWeight: 500,
                 color: window.location.href.includes(
                   `/${content.toLowerCase().replace(/\s+/g, "-")}`
                 )
-                  ? "#5940D4"
-                  : "#fff",
+                  ? "#FF7940"
+                  : "#000",
               }}
             >
               {content}
@@ -85,7 +82,7 @@ export const Navbars = (_props: Props) => {
             {navContent.map((content, i) => (
               <button
                 onClick={() =>
-                  renderLinks(content.toLowerCase().replace(/\s+/g, "-"))
+                  handleNavigation(content.toLowerCase().replace(/\s+/g, "-"))
                 }
                 key={i}
               >
