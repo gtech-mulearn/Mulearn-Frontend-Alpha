@@ -1,3 +1,15 @@
-.Wrapper{
-    padding: 6vh 5vw 0px;
+.Wrapper {
+	padding: 6vh 5vw 0px;
+}
+
+.Tabs {
+	font-weight: 400;
+	font-family: "Nohemi";
+	color: orange;
+}
+
+.TabsList {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
 }
