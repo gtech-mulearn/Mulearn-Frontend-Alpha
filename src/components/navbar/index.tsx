@@ -41,6 +41,7 @@ export const Navbars = () => {
         } else {
           setNavStyle({
             position: "unset",
+            display:"none"
           });
         }
 
