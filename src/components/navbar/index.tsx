@@ -42,6 +42,7 @@ export const Navbars = (_props: Props) => {
         } else {
           setNavStyle({
             position: "unset",
+            display:"none"
           });
         }
 

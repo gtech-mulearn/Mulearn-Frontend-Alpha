@@ -1,0 +1,77 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0px 5vw 6vh;
+  position: relative;
+  flex-direction: column;
+  gap: 6vh;
+  min-height: 100vh;
+}
+
+.Wrapper h1 {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-size: 5vw;
+}
+
+.Wrapper h1 > div {
+  display: flex;
+}
+.Wrapper h1 > div > div {
+  border-bottom: 1.2vw solid #ff7940;
+  height: 4.2vw;
+}
+.Wrapper .Content > p {
+  font-size: 1.5vw;
+}
+.Wrapper .Detailing {
+  border-radius: 20px;
+  border: 1px dashed #ff7940;
+  background: #fff6f2;
+  padding: 6vh 6vw;
+  display: flex;
+  width: fit-content;
+  min-width: 55%;
+  justify-content: space-evenly;
+}
+.Detailing > div {
+  width: calc(38% - 1vw);
+}
+@media screen and (max-width: 1000px) {
+  .Wrapper h1 {
+    font-size: 5.7vw;
+  }
+  .Wrapper .Content > p {
+    font-size: 2vw;
+  }
+  .Wrapper h1 > div > div {
+    height: 4.8vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .Wrapper h1 {
+    font-size: 9vw;
+    flex-direction: column;
+    line-height: 0.5;
+  }
+  .Wrapper .Content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .Wrapper .Content > p {
+    font-size: 3vw;
+    max-width: 90%;
+    text-align: center;
+  }
+  .Wrapper h1 > div > div {
+    border-bottom: 2vw solid #ff7940;
+    height: 5vw;
+  }
+}

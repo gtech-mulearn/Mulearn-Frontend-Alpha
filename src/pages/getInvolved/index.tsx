@@ -1,7 +1,10 @@
+import { Landing } from "./components/hero"
 
 const GetInvolved = () => {
   return (
-	<div>GetInvolved</div>
+	<div>
+    <Landing />
+  </div>
   )
 }
 
