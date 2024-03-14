@@ -1,8 +1,87 @@
 .careersWrapper {
-	color: black;
+  color: black;
+  padding: 0px 5vw 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .careersWrapper button {
-	background-color: orange;
-	padding: 1rem;
+  background-color: orange;
+  padding: 1rem;
+}
+
+.careersWrapper > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: center;
+}
+
+.careersWrapper > div > div {
+  width: calc(100% / 4 - 15px);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 7.1px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  min-width: 300px;
+}
+.careersWrapper > div > div img {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-top: -50px;
+}
+.careersWrapper .dateTime {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.careersWrapper .dateTime p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.careersWrapper .applyButton {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.careersWrapper .viewbutton {
+  background-color: #fff;
+  color: #ff7940;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ff7940;
+  font-size: 16px;
+}
+
+.careersWrapper .applyLinks {
+  background-color: #ff7940;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ff7940;
+}
+.careersWrapper > .paginationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.paginationContainer > button {
+  border-radius: 10px;
+  background-color: #ff7940;
+  font-size: 17px;
 }

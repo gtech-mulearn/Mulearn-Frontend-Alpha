@@ -44,7 +44,7 @@ const Careers = () => {
                 <img src={demo} alt="" />
                 <div>
                   <h3>{career.organization}</h3>
-                  <div>
+                  <div className={styles.dateTime}>
                     <p>
                       <Clock /> 6 months
                     </p>
@@ -58,12 +58,17 @@ const Careers = () => {
 
                 <p>{career.lastdate}</p>
 
-                <div>
-                  <a href="">
+                <div className={styles.applyButton}>
+                  <a href="" className={styles.viewbutton}>
                     <FileSvg />
                     &nbsp;View JD
                   </a>
-                  <a href={career.applylink} target="_blank" rel="noreferrer">
+                  <a
+                    href={career.applylink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.applyLinks}
+                  >
                     Apply&nbsp;
                     <ClickSvg />
                   </a>
@@ -74,19 +79,20 @@ const Careers = () => {
           <h1>
             <span className="colorText">Previous</span> Hiring
           </h1>
-          <ul>
-            {oldData.map((career, index) => (
-              <li key={index}>
-                <img src={demo} alt="" />
-
+          <div>
+            {oldData.slice(0, 10).map((career, index) => (
+              <div key={index}>
                 <h3>µLearn Hiring Call</h3>
-                <p>{career.date}</p>
-                <p>{career.remuneration}</p>
-                <p>{career.role}</p>
-                <p>{career.location}</p>
-              </li>
+                <p>Dated : {career.date}</p>
+                <p>Roles : {career.role}</p>
+                <p>Location : {career.location}</p>
+              </div>
             ))}
-          </ul>
+          </div>
+          <div className={styles.paginationContainer}>
+            <button>Load More...</button>
+            <button>Hide All</button>
+          </div>
         </div>
       ) : (
         <p>Loading careers...</p>
