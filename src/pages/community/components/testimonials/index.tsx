@@ -1,17 +1,36 @@
-import demo from "./demo.png";
 import Marquee from "react-fast-marquee";
 import styles from "./index.module.css";
+import vinu from "../../../home/components/testimonials/assets/vinu.jpeg";
+import thomas from "../../../home/components/testimonials/assets/thomas.jpeg";
+import shaheen from "../../../home/components/testimonials/assets/shaheen.jpeg";
+import deepraj from "../../../home/components/testimonials/assets/deepraj.jpeg";
 
-type Props = {};
-
-export const Testimonials = (_props: Props) => {
+export const Testimonials = () => {
   const data = [
-    {
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      name: "Michael Lacefield",
-      desig: "Co-founder, XYZ",
-      image: demo,
-    },
+		{
+			para: "µLearn’s value, opportunities, and immersive challenges were unparalleled. The diverse mentorship and unwavering support transformed me and expanded my horizons. µLearn: a truly transformative experience!",
+			name: "Vinu Balagopal A P",
+			desig: "Fellow, Technology Evangelization",
+			image: vinu,
+		},
+		{
+			para: "At µLearn, collaboration is crucial. This journey has been a dream come true. The support, opportunities, and guidance I've received have shaped me into the person I am today, making me feel like I’m a part of this 'family'.",
+			name: "Thomas Mathew",
+			desig: "Fellow, Partner Engagement",
+			image: thomas,
+		},
+		{
+			para: "Being at µLearn was a unique and refreshing experience for me. With the freedom to execute our ideas and endless support, our team accomplished impressive projects and enhanced our interactive Discord server. It's truly an amazing community to be a part of.",
+			name: "Shaheen Hyder K",
+			desig: "Fellow, Operations and Development",
+			image: shaheen,
+		},
+		{
+			para: "Nothing matches the happiness of living with a bunch of badass people with a future mindset towards creating the best knowledge economy.",
+			name: "Deepraj R",
+			desig: "Fellow, Program Manager",
+			image: deepraj,
+		},
   ];
 
   const marqParams = {
