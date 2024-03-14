@@ -18,3 +18,9 @@
 	right: auto;
 	text-align: center;
 }
+
+@media screen and (max-width: 630px) {
+	.StoriesContainer .swiper-wrapper {
+		padding-left: 20vw;
+	}
+}

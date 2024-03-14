@@ -8,13 +8,13 @@ import deepraj from "./assets/deepraj.jpeg";
 export const Testimonials = () => {
 	const data = [
 		{
-			para: "µLearn’s value, opportunities, and immersive challenges were unparalleled. With dedication, I became a Tech Evangelization Fellow at GTech. The diverse mentorship and unwavering support opened countless doors, transforming me and expanding my horizons. µLearn: a truly transformative experience!",
+			para: "µLearn’s value, opportunities, and immersive challenges were unparalleled. The diverse mentorship and unwavering support transformed me and expanded my horizons. µLearn: a truly transformative experience!",
 			name: "Vinu Balagopal A P",
 			desig: "Fellow, Technology Evangelization",
 			image: vinu,
 		},
 		{
-			para: "At µLearn, collaboration is crucial. It all began when I proposed a collaboration on behalf of IEEE Travancore Hub. Now, two years later, I'm a Partner Engagement Fellow at µLearn. This journey has been a dream come true. The support, opportunities, and guidance I've received have shaped me into the person I am today. Being part of this community feels like being part of a family.",
+			para: "At µLearn, collaboration is crucial. This journey has been a dream come true. The support, opportunities, and guidance I've received have shaped me into the person I am today, making me feel like I’m a part of this 'family'.",
 			name: "Thomas Mathew",
 			desig: "Fellow, Partner Engagement",
 			image: thomas,
