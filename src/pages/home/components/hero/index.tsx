@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./index.module.css";
-import desktopVid from "./3.0.mp4"; // Video for non-mobile devices
+import desktopVid from "./desktop.mp4"; // Video for non-mobile devices
 import mobileVid from "./mobile.mp4"; // Video for mobile devices
 
 const Hero = () => {

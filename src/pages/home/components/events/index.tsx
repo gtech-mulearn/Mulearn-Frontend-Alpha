@@ -5,8 +5,6 @@ import "swiper/css/autoplay";
 import "./styles.css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { useEffect, useRef, useState } from "react";
-
-import demo from "./demo.png";
 import permute from "./assets/permute.png";
 import amuse from "./assets/amuse.jpg";
 import top100 from "./assets/top100.png";
