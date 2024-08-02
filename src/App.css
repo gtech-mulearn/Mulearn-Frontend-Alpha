@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 #root {
   margin: 0 auto;
   padding: 0rem;
@@ -42,6 +45,10 @@
   font-family: "Nohemi";
   src: local("NohemiExtrabold"), url("./fonts/Nohemi.ttf") format("truetype");
   font-weight: 900;
+}
+@font-face {
+  font-family: "plus-jakarta-sans";
+  src: url('./fonts/PlusJakartaSans-VariableFont_wght.ttf') format("truetype");
 }
 * {
   margin: 0;
