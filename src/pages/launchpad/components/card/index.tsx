@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import toast, { Toaster } from "react-hot-toast";
 
 function Card({
+  img,
   full_name,
   email,
   karma,
@@ -35,7 +36,18 @@ function Card({
       className={style.profileCard}
     >
       <div className={style.profileHeader}>
-        <img src={badge} alt="badge" className={style.badge} />
+        <img
+          src={badge}
+          alt="badge"
+          className={
+            "absolute top-1/2 left-1/2 -translate-y-[25%] opacity-15 -z-10"
+          }
+        />
+        <img
+          src={img}
+          alt="profile_pic"
+          className={`${style.badge} rounded-full ring-2 ring-[#EF7E28]`}
+        />
         <div className={style.profileInfo}>
           <h2 className={style.name}>{full_name}</h2>
           <p className={style.email}>{email}</p>

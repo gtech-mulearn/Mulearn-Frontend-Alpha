@@ -1,4 +1,5 @@
 interface CardProps {
+  img: string;
   full_name: string;
   email: string;
   karma: number;
@@ -22,4 +23,14 @@ interface paginationProps {
   nextPage: number | null;
   per_page: number;
   totalPage: number;
+}
+
+interface topthreeProps {
+  full_name: string;
+  karma: number;
+  muid: string;
+  org: string;
+  profile_pic: string;
+  district_name: string;
+  is_public: boolean;
 }

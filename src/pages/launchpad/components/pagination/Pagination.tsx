@@ -9,7 +9,7 @@ const Pagination = () => {
   const { paginationData, setpaginationData, settableData } = useContext<
     paginationProps | any
   >(TableContext);
-  console.log("paginationData", paginationData);
+  // console.log("paginationData", paginationData);
 
   const handelForward = async () => {
     if (paginationData.isNext) {
@@ -25,14 +25,14 @@ const Pagination = () => {
   };
 
   const handelBackward = async () => {
-    console.log("paginationData", paginationData.isPrev);
+    // console.log("paginationData", paginationData.isPrev);
     if (paginationData.isPrev) {
       const data = await getTableData({
         pageIndex: pageIndex - 1,
-        perPage: 10,
+        perPage: pageIndex === 2 ? 15 : 10,
       });
       console.log("data", data);
-      settableData(data.data);
+      settableData(pageIndex === 2 ? data.data.slice(3) : data.data);
       setpaginationData(data.pagination);
       setpageIndex(pageIndex - 1);
     }
