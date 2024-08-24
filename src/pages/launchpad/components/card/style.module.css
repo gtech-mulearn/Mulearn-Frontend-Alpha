@@ -11,22 +11,26 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .profileHeader {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  align-items: start;
   position: relative;
   z-index: 10;
-  /* padding-top: px; */
+  padding-top: 10px;
 }
 
 .badge {
-  width: 50px;
+  width: 70px;
+  margin-top: 4px;
 }
 
 .profileInfo {
+  /* margin-top: 10px; */
   flex: 1;
   margin-left: 10px;
   text-align: left;
@@ -36,12 +40,13 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'plus-jakarta-sans'
+  font-family: 'plus-jakarta-sans';
+  line-height: 0.9;
 
 }
 
 .email {
-  margin: 5px 0;
+  margin: 0px 0;
   font-size: 0.9rem;
   font-weight: lighter;
   font-family: 'plus-jakarta-sans'
@@ -55,7 +60,7 @@
 }
 
 .rank {
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: bold;
   color: #EF7E28;
   opacity: 0.6;
@@ -65,7 +70,7 @@
   font-family: Inter, sans-serif;
   z-index: -1;
   text-align: start;
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .profileFooter {

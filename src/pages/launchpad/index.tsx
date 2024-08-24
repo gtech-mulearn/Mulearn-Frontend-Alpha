@@ -12,17 +12,17 @@ function Launchpad() {
     {}
   );
   // const [inputValue, setInputValue] = useState("");
-  const [topThree, settopThree] = useState<CardProps[] | []>([]);
+  const [topThree, settopThree] = useState<topthreeProps[] | []>([]);
   const [searchTearm, setsearchTearm] = useState("");
   useEffect(() => {
-    getTableData().then((data) => {
-      settableData(data.data);
+    getTableData({ perPage: 15 }).then((data) => {
+      settableData(data.data.slice(3));
       setpaginationData(data.pagination);
       settopThree(data.data.slice(0, 3));
     });
   }, []);
-  console.log("tableData", tableData);
-  console.log("top three", topThree);
+  // console.log("tableData", tableData);
+  // console.log("top three", topThree);
 
   const handleSearch = async () => {
     const data = await getTableData({ search: searchTearm });
@@ -66,6 +66,7 @@ function Launchpad() {
         <div className="flex flex-wrap justify-center gap-5 py-6">
           {topThree.map((user, index) => (
             <Card
+              img={user.profile_pic}
               key={index}
               full_name={user.full_name}
               email={user.muid}
